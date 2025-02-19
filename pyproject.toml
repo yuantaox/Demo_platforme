@@ -1,0 +1,14 @@
+[project]
+name = "demo-platforme"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "atoti[aws]>=0.9.3",
+]
+[tool.uv]
+package = true
+[project.scripts]
+atoti = "movie.init:main"
+atoti-local = "movie.init:local_main"
